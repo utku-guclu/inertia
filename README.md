@@ -1,4 +1,4 @@
-# Inertia Game Project Documentation
+# The Inertia Game Project Documentation
 
 ![inertia.png](https://img.itch.zone/aW1nLzEzNjIwODIzLnBuZw==/315x250%23c/Usxhq5.png)
 
