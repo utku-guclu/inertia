@@ -1,5 +1,7 @@
 # Inertia Game Project Documentation
 
+![inertia.png](https://img.itch.zone/aW1nLzEzNjIwODIzLnBuZw==/315x250%23c/Usxhq5.png)
+
 ## Overview
 [The Inertia](https://pisokrates.itch.io/inertia) is a relaxing web-based space exploration game that allows players to pilot a spaceship through a celestial body-filled universe. Players can earn points by navigating through space and interacting with celestial bodies, including planets and moons.
 
