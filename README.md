@@ -28,7 +28,7 @@ Players control a spaceship and navigate through space using simple and intuitiv
 - **Space Bar**: Apply forward force to move the spaceship forward.
 
 ## Assets and Resources
-- **Graphics**: Beautifully rendered [celestial bodies](https://assetstore.unity.com/packages/2d/textures-materials/floors/yughues-free-ground-materials-13001), spaceship, and [space environment](https://assetstore.unity.com/packages/3d/props/ball-pack-446). [Galaxy Box2](https://assetstore.unity.com/packages/2d/textures-materials/sky/galaxybox-2-0-84349)
+- **Graphics**: Beautifully rendered [celestial bodies](https://assetstore.unity.com/)
 - **Sound Effects**: Soothing audio effects for ambiance.
 - **Music**: Calm and relaxing background music [New World](https://darkofee.bandcamp.com/track/new-world) by [Darkofee](https://darkofee.bandcamp.com/)
 
