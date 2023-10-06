@@ -3,14 +3,16 @@ using UnityEngine;
 public class Planet : CelestialBody
 {
     private Vector3 randomRotationAxis;
+    //public Star assignedStar;
+    public Transform starToOrbit;
 
     protected override void Start()
     {
         base.Start();
         // Add any additional planet-specific initialization code here
         randomRotationAxis = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
-        orbitSpeed = Random.Range(-1f, .3f);
-        orbitRadius = Random.Range(30f, 90f);
+        orbitSpeed = Random.Range(-.3f, .1f);
+        orbitRadius = Random.Range(300f, 1200f);
     }
 
     protected override void Update()
@@ -28,12 +30,16 @@ public class Planet : CelestialBody
 
     protected override void CircularMovement()
     {
-        // Calculate the new position for circular movement
-        Vector3 newPosition = transform.position;
-        newPosition.x = Mathf.Cos(Time.time * orbitSpeed) * orbitRadius;
-        newPosition.z = Mathf.Sin(Time.time * orbitSpeed) * orbitRadius;
+        // Ensure there is an assigned star for this planet
+        if (starToOrbit != null)
+        {
+            // Calculate the new position for circular movement around the assigned star
+            Vector3 newPosition = starToOrbit.transform.position;
+            newPosition.x += Mathf.Cos(Time.time * orbitSpeed) * orbitRadius;
+            newPosition.z += Mathf.Sin(Time.time * orbitSpeed) * orbitRadius;
 
-        // Update the planet's position
-        transform.position = newPosition;
+            // Update the planet's position
+            transform.position = newPosition;
+        }
     }
 }

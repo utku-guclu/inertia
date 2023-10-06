@@ -4,15 +4,18 @@ public class CelestialBody : MonoBehaviour
 {
     public Color bodyColor;
     protected float minMass = 1.0f;
-    protected float maxMass = 10.0f;
+    protected float maxMass = 100.0f;
     protected float randomMass;
     protected float minDrag = 0.1f;
     protected float maxDrag = 1.0f;
     protected float randomDrag;
-    protected float bodySpeed = 1.0f;
-    public float orbitSpeed = 1.0f;
+    protected float bodySpeed;
+    public float orbitSpeed;
     public float orbitRadius;
     public float bodySize;
+
+    public float minOrbitRadius = 600f;
+    public float maxOrbitRadius = 1200f;
 
     protected Rigidbody rb;
 
@@ -20,8 +23,9 @@ public class CelestialBody : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        bodySize = Random.Range(1f, 7f);
-        orbitRadius = Random.Range(5f, 60f);
+        bodySpeed = Random.Range(.1f, 1f);
+        orbitSpeed = Random.Range(0, .01f);
+        bodySize = Random.Range(1f, 16f);
 
         transform.localScale = new Vector3(bodySize, bodySize, bodySize);
 
