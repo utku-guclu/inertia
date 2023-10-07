@@ -59,4 +59,4 @@ We have exciting plans for the future of the Inertia Game:
 - Expanding gameplay features for a more immersive experience.
 
 ## License
-The Inertia Game is released under the MIT License.
+The Inertia Game is released under the [MIT License](LICENSE).
