@@ -26,6 +26,7 @@ Players control a spaceship and navigate through space using simple and intuitiv
 ## Controls
 - **WASD Keys**: Control the spaceship's movement in the respective directions.
 - **Space Bar**: Apply forward force to move the spaceship forward.
+- **C Key**: Toggle Camera View.
 
 ## Assets and Resources
 - **Graphics**: Beautifully rendered [celestial bodies](https://assetstore.unity.com/)
